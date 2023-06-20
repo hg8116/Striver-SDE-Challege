@@ -22,7 +22,7 @@ class Interval {
     }
 }
 
-public class MergeIntervals {
+public class MergeIntervals8 {
 
     public static List<Interval> mergeIntervals(Interval[] intervals) {
         List<Interval> ans = new ArrayList<>();
