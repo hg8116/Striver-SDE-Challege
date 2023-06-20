@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * If element does not exist return false
  */
 
-public class SearchInA2DMatrix {
+public class SearchInA2DMatrix13 {
     static boolean searchMatrix(ArrayList<ArrayList<Integer>> mat, int target) {
         int n = mat.size();
         int m = mat.get(0).size();

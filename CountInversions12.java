@@ -8,7 +8,7 @@
 * Return the count
 */
 
-public class CountInversions {
+public class CountInversions12 {
     public static long getInversions(long arr[], int n) {
         return mergeSort(arr, 0, n - 1);
     }

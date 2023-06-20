@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Modified Moore's Voting Algorithm
  * There can be only 2 elements with n/3 occurrence
  */
-public class MajorityElementII {
+public class MajorityElementII16 {
     public static ArrayList<Integer> majorityElementII(ArrayList<Integer> arr) {
         int n = arr.size();
         ArrayList<Integer> ans = new ArrayList<>();

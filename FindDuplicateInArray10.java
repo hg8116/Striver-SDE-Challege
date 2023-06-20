@@ -8,7 +8,7 @@ import java.util.ArrayList;
 * If its already visited, return the element
 */
 
-public class FindDuplicateInArray {
+public class FindDuplicateInArray10 {
     public static int findDuplicate(ArrayList<Integer> arr, int n) {
         for (int i = 0; i < arr.size(); i++) {
             int ind = Math.abs(arr.get(i)) - 1;

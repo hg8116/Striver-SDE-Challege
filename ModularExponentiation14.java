@@ -1,6 +1,6 @@
 // https://www.codingninjas.com/codestudio/problems/modular-exponentiation_8230803?challengeSlug=striver-sde-challenge&leftPanelTab=0
 
-public class ModularExponentiation {
+public class ModularExponentiation14 {
     public static int modularExponentiation(int x, int n, int m) {
         return (int) helper((long) x, (long) n, (long) m);
     }

@@ -1,4 +1,4 @@
-public class MergeTwoSortedArrays {
+public class MergeTwoSortedArrays9 {
     public static int[] ninjaAndSortedArrays(int arr1[], int arr2[], int m, int n) {
         int i = m - 1;
         int j = n - 1;

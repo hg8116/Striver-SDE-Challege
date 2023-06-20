@@ -1,6 +1,6 @@
 // https://www.codingninjas.com/codestudio/problems/sort-0-1-2_8230695?challengeSlug=striver-sde-challenge&leftPanelTab=1
 
-public class Sort012 {
+public class Sort0125 {
     public static void sort012(int[] arr) {
         int zeros = 0, ones = 0, twos = 0;
 

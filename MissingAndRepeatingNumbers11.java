@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class MissingAndRepeatingNumbers {
+public class MissingAndRepeatingNumbers11 {
     public static int[] missingAndRepeating(ArrayList<Integer> arr, int n) {
         int[] ans = {-1, -1};
 

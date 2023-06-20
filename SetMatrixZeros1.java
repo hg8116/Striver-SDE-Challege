@@ -1,6 +1,6 @@
 // https://www.codingninjas.com/codestudio/problems/set-matrix-zeros_8230862?challengeSlug=striver-sde-challenge
 
-public class SetMatrixZeros {
+public class SetMatrixZeros1 {
     public static void setZeros(int matrix[][]) {
         int n = matrix.length;
         int m = matrix[0].length;

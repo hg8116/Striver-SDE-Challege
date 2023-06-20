@@ -2,20 +2,21 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        List<Integer> arr = new ArrayList<>();
-        arr.add(2);
-        arr.add(3);
-        arr.add(2);
+        System.out.println(helper(new int[]{6, -8, -9, 5, 3, -18}));
+    }
 
-        System.out.println(arr);
-        int[] ans = {-1, -1};
-        for (int i = 0; i < arr.size(); i++) {
-            int ind = arr.get(i) - 1;
-            int temp = arr.get(ind);
-            arr.set(ind, arr.get(i));
-            arr.set(i, temp);
+    static int helper(int[] arr){
+        int min = Integer.MAX_VALUE;
+        int min_end = 0;
+        int k = arr.length;
+        for(int i=0; i<k; i++){
+            min_end = min_end + arr[i];
+            if(min > min_end)
+                min = min_end;
+            if(min_end < 0)
+                min_end = 0;
         }
-        System.out.println(arr);
+        return min;
     }
 
 }

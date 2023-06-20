@@ -6,7 +6,7 @@
  * And to form all combinations we need to find the nCr
  */
 
-public class UniquePaths {
+public class UniquePaths17 {
     public static int uniquePaths(int m, int n) {
         int N = m - 1 + n - 1;
         int r = m - 1;

@@ -3,7 +3,7 @@
 /*
 * Moore's voting algorithm
 */
-public class Day6MajorityElement {
+public class Day6MajorityElement15 {
     public static int findMajority(int[] arr, int n) {
         int ans = arr[0];
         int count = 0;

@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class RotateMatrix {
+public class RotateMatrix7 {
     public static void rotateMatrix(ArrayList<ArrayList<Integer>> mat, int n, int m) {
         int startRow = 0, startCol = 0, endRow = n - 1, endCol = m - 1;
 

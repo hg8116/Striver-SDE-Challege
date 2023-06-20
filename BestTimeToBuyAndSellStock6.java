@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class BestTimeToBuyAndSellStock {
+public class BestTimeToBuyAndSellStock6 {
     public static int maximumProfit(ArrayList<Integer> prices) {
         int n = prices.size();
         int ans = 0;

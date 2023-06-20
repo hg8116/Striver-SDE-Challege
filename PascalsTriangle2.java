@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class PascalsTriangle {
+public class PascalsTriangle2 {
     public static ArrayList<ArrayList<Long>> printPascal(int n) {
         ArrayList<ArrayList<Long>> ans = new ArrayList<>();
         for (int i = 0; i < n; i++) {

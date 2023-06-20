@@ -11,7 +11,7 @@ import java.util.List;
  * Reverse the array from i+1 to n-1
  */
 
-public class NextPermutation {
+public class NextPermutation3 {
     public static ArrayList<Integer> nextPermutation(ArrayList<Integer> permutation) {
         if (permutation.size() <= 1)
             return permutation;
