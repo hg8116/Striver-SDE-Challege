@@ -36,4 +36,17 @@ public class ReverseLinkedList25 {
 
         return prev;
     }
+
+// Recursive reverse
+//    Node reverseList(Node head) {
+//        if (head == null)
+//            return head;
+//        Node newHead = head;
+//        if (newHead.next != null) {
+//            newHead = reverseList(head.next);
+//            head.next.next = head;
+//        }
+//        head.next = null;
+//        return newHead;
+//    }
 }
