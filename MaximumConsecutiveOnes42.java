@@ -2,6 +2,14 @@
 
 import java.util.ArrayList;
 
+/*
+ * Use two pointer sliding window approach
+ * Decrement k if right pointer finds zero
+ * Increment k if left pointer finds zero
+ * Take max size of the window as answer
+ * Return the answer
+ */
+
 public class MaximumConsecutiveOnes42 {
     public static int longestSubSeg(ArrayList<Integer> arr, int n, int k) {
         int i = 0, j = 0, ans = 0;
