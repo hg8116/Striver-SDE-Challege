@@ -2,16 +2,22 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        String[] words = {"cd","ac","dc","ca","zz"};
-        Set<String> set = new HashSet<>();
-        int ans = 0;
-        for(String word: words){
-            StringBuilder sb = new StringBuilder(word);
-            if(set.contains(word) || set.contains(sb.reverse().toString()))
-                ans++;
-            set.add(word);
+        ArrayList<Integer> arr = new ArrayList<>();
+        Integer[] temp = {1, 2, 2, 3, 3, 3, 4, 4, 5, 5};
+        arr.addAll(Arrays.asList(temp));
+
+        int i=0, j=1, n = arr.size();
+        while(j < arr.size()){
+            if(arr.get(i) != arr.get(j)){
+                i = j;
+                j++;
+            }
+            else{
+                arr.remove(j);
+            }
         }
-        System.out.println(ans);
+        System.out.println(arr);
+
     }
 
 }
