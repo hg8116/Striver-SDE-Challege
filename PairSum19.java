@@ -12,7 +12,7 @@ public class PairSum19 {
             int diff = s - num;
             if (map.containsKey(diff)) {
                 for (int i = 0; i < map.get(diff); i++) {
-                    ans.add(new int[]{Math.min(num, diff), Math.max(num, diff)});
+                    ans.add(new int[] { Math.min(num, diff), Math.max(num, diff) });
                 }
             }
             map.put(num, map.getOrDefault(num, 0) + 1);

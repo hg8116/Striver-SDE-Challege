@@ -1,13 +1,18 @@
-import java.util.*;
+// https://www.codingninjas.com/studio/problems/k-most-frequent-elements_8230853?challengeSlug=striver-sde-challenge
 
-public class Test {
-    public static void main(String[] args) {
-        int[] arr = { 1, 1, 1, 2, 2, 3, 3, 3, 3 };
-        int[] ans = KMostFrequent(9, 2, arr);
-        for (int x : ans)
-            System.out.print(x + " ");
-    }
+/*
+ * Use hash map to store the frequency of each element.
+ * Use a priority queue to store the elements of all the arrays.
+ * Then, pop the elements from the priority queue and store them in the answer array.
+ * Time Complexity: O(NlogN)
+ * Space Complexity: O(N)
+ */
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
+
+public class KMostFrequentElements74 {
     public static int[] KMostFrequent(int n, int k, int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int x : arr)
