@@ -5,7 +5,6 @@ import java.util.*;
 public class PairSum19 {
     public static List<int[]> pairSum(int[] arr, int s) {
         List<int[]> ans = new ArrayList<>();
-        int n = arr.length;
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int num : arr) {

@@ -18,7 +18,6 @@ public class MergeKSortedArrays73 {
             for (int j : kArrays.get(i))
                 pq.add(j);
         }
-        int i = 0;
         while (!pq.isEmpty())
             ans.add(pq.poll());
 
