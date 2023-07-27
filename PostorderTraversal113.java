@@ -1,0 +1,44 @@
+// https://www.codingninjas.com/studio/problems/postorder-traversal_8230858?challengeSlug=striver-sde-challenge&leftPanelTab=0
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+ * Use recursion to traverse the tree in postorder fashion and store the data in a list.
+ * Also can be done using stack iteratively.
+ */
+
+public class PostorderTraversal113 {
+    public class TreeNode {
+        int data;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.data = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.data = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
+    public static List<Integer> getPostOrderTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        helper(root, ans);
+        return ans;
+    }
+
+    static void helper(TreeNode root, List<Integer> ans) {
+        if (root == null)
+            return;
+        helper(root.left, ans);
+        helper(root.right, ans);
+        ans.add(root.data);
+    }
+}
