@@ -35,7 +35,7 @@ public class VerticalOrderTraversal {
         q.add(new Pair(root, 0));
         while (!q.isEmpty()) {
             Pair temp = q.poll();
-            ArrayList arr = map.getOrDefault(temp.lvl, new ArrayList<>());
+            ArrayList<Integer> arr = map.getOrDefault(temp.lvl, new ArrayList<>());
             arr.add(temp.node.data);
             map.put(temp.lvl, arr);
             if (temp.node.left != null)
